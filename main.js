@@ -1,12 +1,13 @@
 
-let x = document.getElementById("user").value;
-let y =  document.getElementById("km").value;
-let z =  document.getElementById("eta").value;
-let myBtn = document.getElementById("myBtn").value;
+let btn = document.getElementById("myBtn");
+let user = document.getElementById("user");
+let chilo =  document.getElementById("km");
+let age =  document.getElementById("eta");
 
-console.log("user", x);
-console.log("km", y);
-console.log("età", z);
+btn.addEventListener("click", function() {
+    alert("L'utente ha scritto: " + user.value)
+    alert("L'utente ha scritto: " + chilo.value)
+    alert("L'utente ha scelto: " + age.value)
+});
 
-document.getElementById("costoBiglietto").innerHTML = x;
-
+console.log("user", user);
