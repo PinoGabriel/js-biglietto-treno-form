@@ -1,0 +1,9 @@
+body {
+    background-color: #B91450;
+}
+
+#my_bg {
+    min-height: 100px;
+    background-color: white;
+    border-radius: 5rem;
+}
