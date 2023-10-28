@@ -12,34 +12,44 @@
     
     <main>
         <!-- INIZIO PRIMA SECTTION INPUT -->
-        <section class="first">
-            <div class="container text-center py-4 text-white">
-                <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-            </div>
-            <div id="my_bg" class="container d-flex justify-content-center align-items-center">
-                    <form>
-                        <input type="text" id="user">
-                        <input type="number" id="km">
-                        <select id="eta">
-                            <option value="maggiorenne">maggiorenne</option>
-                            <option value="minorenne">minorenne</option>
-                            <option value="over65">Over65</option>
-                        </select>
-                        <button id="myBtn">Genera</button>
-                    </form>
+        <section id="my_bg" class="container my-3">
+            <div class="row justify-content-center">
+                <h1 class="col-auto text-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+                <div class="row shadow p-3 mb-5 bg-body-tertiary rounded py-3 my-3 bg-white">
+                    <div class="col text-center">
+                            <label for="user" class="form-label">Nome Cognome</label>
+                            <input type="text" class="form-control" id="user">
+                    </div>
+                    <div class="col text-center">
+                        <label for="km" class="form-label">Km da percorrere</label>
+                            <input type="number" class="form-control" id="km">
+                    </div>
+                    <div class="col text-center">
+                        <label for="age" class="form-label">Fascia d'età</label>
+                        <select class="form-select" id="age">
+                            <option id="v1" value="1">maggiorenne</option>
+                            <option id="v2" value="2">minorenne</option>
+                            <option id="v3" value="3">over65</option>
+                          </select>
+                    </div>
+                    <div class="row pt-5 justify-content-center">
+                        <div class="col-auto">
+                            <button id="myBtn" class="btn btn-primary">Genera</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn">Annulla</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             
         </section>
 
 
         <!-- INIZIO SECONDA SECTTION RIEMPIMENTO -->
-        <section>
-            <div class="container text-center py-3 color-white">
-
-                <h2 id="costoBiglietto"> bubble</h2>
-
-            </div>
+        <section class="container text-white py-3 text-center">
+            <h2 id="costoBiglietto">Prova</h2>
         </section>
     </main>
 
