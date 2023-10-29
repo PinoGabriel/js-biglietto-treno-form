@@ -21,20 +21,20 @@ btn.addEventListener("click", function() {
         costofinale = prezzo - (20/100 *prezzo);
         myName.innerHTML = user.value;
         carrozzaRandom.innerHTML = Math.floor(Math.random() * 9) +1;
-        codiceRandom.innerHTML = Math.floor(Math.random() * 10000) + 1000;
+        codiceRandom.innerHTML = Math.floor(Math.random() * 89999) + 10000;
         costoBiglietto.innerHTML = costofinale.toFixed(2) + "€";
     } else if (age.value=="over65") {
         prezzo = (parseInt(chilo.value) * costokm)
         costofinale = prezzo - (40/100 *prezzo);
         myName.innerHTML = user.value;
         carrozzaRandom.innerHTML = Math.floor(Math.random() * 9) +1;
-        codiceRandom.innerHTML = Math.floor(Math.random() * 10000) + 1000;
+        codiceRandom.innerHTML = Math.floor(Math.random() * 89999) + 10000;
         costoBiglietto.innerHTML = costofinale.toFixed(2) + "€";
     } else {
         costofinale = (parseInt(chilo.value) * costokm)
         myName.innerHTML = user.value;
         carrozzaRandom.innerHTML = Math.floor(Math.random() * 9) +1;
-        codiceRandom.innerHTML = Math.floor(Math.random() * 10000) + 1000;
+        codiceRandom.innerHTML = Math.floor(Math.random() * 89999) + 10000;
         costoBiglietto.innerHTML = costofinale.toFixed(2) + "€";
     }
     console.log("il prezzo è di: " + prezzo);
